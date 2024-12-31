@@ -1,0 +1,11 @@
+pandas
+numpy
+pyarrow
+torch
+fastparquet
+accelerate
+scikit-learn
+tqdm
+gym
+stable-baselines3
+git+https://github.com/CapitanFindusFD/gym-mtsim.git
