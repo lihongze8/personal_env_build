@@ -50,7 +50,7 @@ source "$BASHRC"
 # 初始化 conda
 echo "Initializing conda..."
 conda init bash
-
+source ~/.bashrc
 # 重新加载 bashrc
 echo "Reloading bash configuration..."
 source "$HOME/.bashrc"
