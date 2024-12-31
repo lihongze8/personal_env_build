@@ -7,6 +7,16 @@ set -e
 MINICONDA_URL="https://repo.anaconda.com/miniconda/Miniconda3-py39_24.11.1-0-Linux-x86_64.sh"
 MINICONDA_INSTALL_DIR="$HOME/miniconda3"
 BASHRC="$HOME/.bashrc"
+# 下载依赖文件（如果未找到）
+if [ ! -f "conda_requirements.txt" ]; then
+    echo "Downloading conda_requirements.txt..."
+    curl -O https://raw.githubusercontent.com/lihongze8/personal_env_build/main/conda_requirements.txt
+fi
+
+if [ ! -f "requirements.txt" ]; then
+    echo "Downloading requirements.txt..."
+    curl -O https://raw.githubusercontent.com/lihongze8/personal_env_build/main/requirements.txt
+fi
 
 # 下载 Miniconda 安装脚本
 echo "Downloading Miniconda..."
