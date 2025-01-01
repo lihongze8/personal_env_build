@@ -1,7 +1,6 @@
 pandas
 numpy
 pyarrow
-torch
 fastparquet
 accelerate
 scikit-learn
