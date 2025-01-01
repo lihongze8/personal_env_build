@@ -8,4 +8,5 @@ scikit-learn
 tqdm
 gym
 stable-baselines3
-git+https://github.com/AminHP/gym-mtsim.git
+git+https://github.com/AminHP/gym-mtsim/archive/main.zip
+
