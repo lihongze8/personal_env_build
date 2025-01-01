@@ -65,7 +65,7 @@ conda install -y -n base ipykernel --update-deps --force-reinstall
 # 安装 conda_requirements.txt 的依赖
 if [ -f "conda_requirements.txt" ]; then
     echo "Installing conda dependencies from conda_requirements.txt..."
-    conda install -y -c conda-forge --file conda_requirements.txt
+    conda install -y -c conda-forge -c pytorch -c nvidia --file conda_requirements.txt
 fi
 
 # 安装 requirements.txt 的 pip 依赖
